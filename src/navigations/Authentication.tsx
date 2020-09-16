@@ -5,12 +5,11 @@ import { StackRoute } from 'constants/Routes';
 import LoginScreen from 'screens/Authentication/Login';
 import RegisterScreen from 'screens/Authentication/Register';
 
-
 const Stack = createStackNavigator();
 
 const AuthNavigationStack = () => {
   return (
-    <Stack.Navigator initialRouteName={StackRoute.Login}>
+    <Stack.Navigator initialRouteName={StackRoute.LoginScreen}>
       <Stack.Screen
         name={StackRoute.LoginScreen}
         component={LoginScreen}

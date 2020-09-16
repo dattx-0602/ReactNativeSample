@@ -7,7 +7,7 @@ class UserStore {
     this._hasLogin = hasLogin;
   };
 
-  @computed get IsUserLogined (): boolean {
+  @computed get IsUserLogined(): boolean {
     return this._hasLogin;
   }
 }
