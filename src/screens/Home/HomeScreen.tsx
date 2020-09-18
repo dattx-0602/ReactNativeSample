@@ -59,7 +59,6 @@ const HomeScreen = (props: Props) => {
 
   return (
     <>
-      <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.body}>
         <View style={styles.body}>
           <Button

@@ -9,12 +9,11 @@
  */
 import { observer } from 'mobx-react';
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 const SettingScreen = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.body}>
         <View style={styles.body}>
           <Text>Hi, This is Setting Screen</Text>

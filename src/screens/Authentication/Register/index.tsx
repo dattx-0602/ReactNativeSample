@@ -14,11 +14,12 @@ import { Button, SafeAreaView, StatusBar, StyleSheet, View } from 'react-native'
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 import { UserStore } from 'stores';
+import { StackRoute } from 'constants/Routes';
 
-const RegisterScreen = () => {
+const RegisterScreen = (props: any) => {
+  const { navigation } = props;
   return (
     <>
-      <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <View style={styles.body}>
           <Button
@@ -27,6 +28,14 @@ const RegisterScreen = () => {
               UserStore.setHasLogin(true);
             }}
           />
+          <Button
+            title="Go to Register again..."
+            onPress={() => {
+              props.navigation.push(StackRoute.RegisterScreen);
+            }}
+          />
+          <Button title="Go back" onPress={() => navigation.goBack()} />
+          <Button title="Go back to first screen in stack" onPress={() => navigation.popToTop()} />
         </View>
       </SafeAreaView>
     </>
