@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { BottomNavigationScreen } from 'screens/NavigationExample/BottomNavigation';
 import { StackRoute } from 'constants/Routes';
+import { Alert } from 'react-native';
 
 const BottomStack = createBottomTabNavigator();
 
@@ -19,6 +20,12 @@ const BottomNavigationStack = () => {
       </BottomStack.Screen>
       <BottomStack.Screen
         name={StackRoute.BottomNavigation2ScreenScreen}
+        listeners={{
+          tabPress: (e) => {
+            e.preventDefault();
+            Alert.alert('Execute some logic here!');
+          },
+        }}
         options={{
           title: 'Bottom 2',
         }}>
