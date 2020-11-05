@@ -57,6 +57,9 @@ const ModalStackSampleStack = () => {
       <modalStack.Screen
         name={StackRoute.ModalNavigation1Screen}
         component={ModalNavigation1Screen}
+        options={{
+          title: 'Modal Navigation Example',
+        }}
       />
       <modalStack.Screen
         name={StackRoute.ModalNavigation2Screen}

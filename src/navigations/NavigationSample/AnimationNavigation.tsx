@@ -49,12 +49,18 @@ const AnimationSampleStack = () => {
       <AnimationStack.Screen
         name={StackRoute.AnimationNavigation1Screen}
         component={AnimationNavigation1Screen}
+        options={{
+          title: 'Animation Navigation Example',
+        }}
       />
       <AnimationStack.Screen
         name={StackRoute.AnimationNavigation2Screen}
         component={AnimationNavigation2Screen}
         listeners={{
           beforeRemove: beforeRemove,
+        }}
+        options={{
+          title: 'Animation Navigation Example',
         }}
       />
     </AnimationStack.Navigator>
