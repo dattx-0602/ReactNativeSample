@@ -14,22 +14,22 @@ const BottomNavigationStack = () => {
       <BottomStack.Screen
         name={StackRoute.BottomNavigation1ScreenScreen}
         options={{
-          title: 'Bottom 1',
+          title: 'Home',
         }}>
-        {(props) => <BottomNavigationScreen {...props} title="Bottom Navigation 1 Screen" />}
+        {(props) => <BottomNavigationScreen {...props} title="This is Home Screen" />}
       </BottomStack.Screen>
       <BottomStack.Screen
         name={StackRoute.BottomNavigation2ScreenScreen}
         listeners={{
           tabPress: (e) => {
             e.preventDefault();
-            Alert.alert('Execute some logic here!');
+            Alert.alert('You Need Login before access Account screen!');
           },
         }}
         options={{
-          title: 'Bottom 2',
+          title: 'Account',
         }}>
-        {(props) => <BottomNavigationScreen {...props} title="Bottom Navigation 2 Screen" />}
+        {(props) => <BottomNavigationScreen {...props} title="This is Account Screen" />}
       </BottomStack.Screen>
     </BottomStack.Navigator>
   );
