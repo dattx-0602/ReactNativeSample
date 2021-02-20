@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import AnimationSampleStack from './NavigationSample/AnimationNavigation';
 import BottomNavigationStack from './NavigationSample/BottomNavigation';
 import ModalNavigationStack from './NavigationSample/ModalNavigation';
+import SwipeSampleStack from 'navigations/SwipeSampleStack';
 
 const Tab = createStackNavigator();
 const HomeNavigationStack = () => {
@@ -32,6 +33,11 @@ const HomeNavigationStack = () => {
       <Tab.Screen
         name={StackRoute.ModalNavigation1Screen}
         component={ModalNavigationStack}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name={StackRoute.SwipeSampleScreen}
+        component={SwipeSampleStack}
         options={{ headerShown: false }}
       />
     </Tab.Navigator>
