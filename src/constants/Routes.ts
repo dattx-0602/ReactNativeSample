@@ -13,4 +13,6 @@ export enum StackRoute {
 
   ModalNavigation1Screen = 'ModalNavigation1Screen',
   ModalNavigation2Screen = 'ModalNavigation2Screen',
+
+  SwipeSampleScreen = 'SwipeSampleScreen',
 }

@@ -44,6 +44,10 @@ const EXAMPLE_COMPONENTS: ExampleComponent[] = [
     stackRoute: StackRoute.ModalNavigation1Screen,
     title: 'Modal Navigation Example',
   },
+  {
+    stackRoute: StackRoute.SwipeSampleScreen,
+    title: 'Swipe Modal Example',
+  },
 ];
 
 const HomeScreen = (props: Props) => {
